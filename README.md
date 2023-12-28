@@ -32,4 +32,4 @@ npm start
 
 5. Open your web browser and go to `http://localhost:3000` to view the app.
 
-That's it! You now have the Find Trainer App up and running on your machine. Enjoy creating and bidding on auctions!
+That's it! You now have the Find Trainer App up and running on your machine.
