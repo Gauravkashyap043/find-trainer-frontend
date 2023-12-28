@@ -1,0 +1,39 @@
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.active {
+  color: indigo;
+}
+
+.table-cont {
+  border-collapse: separate;
+  border-spacing: 0 2px;
+}
+
+.table-cont > thead tr {
+  height: 37px;
+  text-align: left;
+}
+.table-cont > tbody td {
+  height: 4rem;
+  padding: 0 5px;
+}
+.table-cont th {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+.table-cont td {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+.table-cont > thead tr span {
+  margin-left: 4%;
+}
+.table-cont > tbody tr span {
+  margin-left: 4%;
+}
+
