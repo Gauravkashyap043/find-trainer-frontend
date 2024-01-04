@@ -1,0 +1,51 @@
+
+.inputField::-webkit-outer-spin-button,
+.inputField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputField[type="number"] {
+  -moz-appearance: textfield;
+}
+.custom-label {
+  font-size: 0.95rem;
+  margin-left: 3px;
+  margin-bottom: 1%;
+}
+.cp-viewer {
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  align-self: center;
+}
+.cp-viewer-i {
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  align-self: center;
+}
+.isuggest {
+  position: absolute;
+  right: 6px;
+  bottom: -47px;
+  z-index: 1;
+  top: 53px;
+}
+
+input:disabled,textarea:disabled,textarea[disabled]
+input[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.inputField::placeholder {
+  color:#676767;
+  font-size: 14px;
+}
+
+/* .inputField:focus{
+  border:2px solid #1976d2;
+} */
