@@ -18,6 +18,7 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
 
   const submitForm = () => {
+    console.log("enter to form")
     let usernameValid = false;
     if (!username) {
       setUsernameError("! Number is required");
@@ -35,6 +36,7 @@ const Login: React.FC = () => {
     }
 
     if (usernameValid && passwordValid) {
+      console.log("enter after validation")
       setLoading(true);
       const apiParams: ApiParams = {
         url: `${apiEndPoints.login}`,
@@ -43,7 +45,6 @@ const Login: React.FC = () => {
           setLoading(false);
           toast.success(res.message);
           navigate("/find-trainer")
-          // Redirect or perform any action upon successful login
         },
         errorFunction: (error: any) => {
           console.log("---error--", error);
@@ -70,7 +71,7 @@ const Login: React.FC = () => {
             <InputField
               onChange={(e: any) => setUsername(e.target.value)}
               properties={{
-                fieldType: "text",
+                fieldType: "number",
               }}
               style={!usernameError ? "style" : "errorStyle"}
               value={username}
