@@ -15,7 +15,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/find-trainer" element={<Map />} />
       </Routes>
-
       <ToastContainer />
     </div>
   );

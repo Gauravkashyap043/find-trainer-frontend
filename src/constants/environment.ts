@@ -1,4 +1,4 @@
 export const environment = {
-  baseUrl: "http://localhost:4000/",
+  baseUrl: "https://find-your-trainer.onrender.com/",
 };
 
