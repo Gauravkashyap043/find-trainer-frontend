@@ -18,7 +18,7 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
 
   const submitForm = () => {
-    console.log("enter to form")
+    console.log("enter to form");
     let usernameValid = false;
     if (!username) {
       setUsernameError("! Number is required");
@@ -36,7 +36,7 @@ const Login: React.FC = () => {
     }
 
     if (usernameValid && passwordValid) {
-      console.log("enter after validation")
+      console.log("enter after validation");
       setLoading(true);
       const apiParams: ApiParams = {
         url: `${apiEndPoints.login}`,
@@ -44,7 +44,11 @@ const Login: React.FC = () => {
         response: (res: any) => {
           setLoading(false);
           toast.success(res.message);
-          navigate("/find-trainer")
+          const userData = { username, password };
+          Helper.handleLoginData(userData, (result) => {
+            console.log("Login data stored successfully:", result);
+          });
+          navigate("/find-trainer");
         },
         errorFunction: (error: any) => {
           console.log("---error--", error);
